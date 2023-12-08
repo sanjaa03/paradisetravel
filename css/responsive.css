@@ -1,0 +1,139 @@
+@media screen and (max-width: 1200px){
+    .textab{
+        margin-left: 50px;
+    }
+   
+
+}
+@media screen and (max-width: 1050px){
+    .nav-item{
+        font-size: 15px;
+      }
+    .logo{
+        font-size: 20px;
+    }
+   
+
+}
+
+    @media(max-width: 1024px){
+        .bar{
+          display: block;
+        }
+        .hamburger{
+          display: block;
+        }
+        .hamburger.active .bar:nth-child(2){
+          opacity: 0;
+        }
+        .hamburger.active .bar:nth-child(1){
+          transform: rotate(45deg) translateY(11.5px); 
+        }  
+        .hamburger.active .bar:nth-child(3){
+          transform: rotate(-45deg) translateY(-11.5px); 
+        }
+        .nav-menu{
+          position: fixed;
+          right: -100%;
+          top: 70px;
+          flex-direction: column;
+          width: 100%;
+          text-align: center;
+          
+          transition: 0.3s;
+        }
+        .nav-item{
+          padding: 1.5rem 0;
+        }
+        
+        .nav-menu.active{
+          right: 0;
+        }
+        .fleks{
+            margin-bottom: 60px;
+        }
+        #aboutImagesOne img{
+            margin-left: 30px;
+         }
+      }
+  
+  
+
+ @media screen and (max-width: 960px){
+    #aboutImagesOne img{
+        width: 400px;
+        height: 300px;
+     }
+     #aboutImagesTwo img{
+        width: 400px;
+        height: 300px;
+     }
+    
+ }
+
+
+@media screen and (max-width: 620px){
+    .carousel-item img{
+        height: 200px;
+    }
+   .fleks{
+    margin-bottom: 20px;
+    }
+    .naslov{
+        font-size: 15px;
+    }
+    .carousel-caption p{
+        font-size: 10px;
+    }
+    .dugme{
+       font-size: 12px;
+    
+    }
+    #aboutImagesOne img{
+       
+        margin-left: 30px;
+     }
+     #aboutBlockOne{
+        margin-left:-30px;
+      }
+      #aboutImagesOne img{
+        width: 300px;
+        height: 200px;
+       
+     }
+     #aboutImagesTwo img{
+        width: 300px;
+        height: 200px;
+     }
+     .imgabout img{
+        margin-top: 50px;
+        width: 300px;
+        height:400px;
+       }
+       .text{
+           margin-bottom: 30px;
+       }
+     
+ }
+
+ @media screen and (max-width: 426px){
+   
+   .fleks{
+    margin-bottom: 13px;
+}
+.dugme{
+    font-size: 10px;
+ 
+ }
+  #aboutImagesTwo img{
+        margin-left: 30px;
+     }
+
+     .imgabout img{
+        width: 250px;
+        height:350px;
+    }
+    footer p{
+        font-size:12px;
+     }
+ }
