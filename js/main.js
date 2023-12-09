@@ -279,3 +279,27 @@ nesto.innerHTML = `<div class="stil">
     <div id="ispis"></div>
 </div>`
        
+/*var destination=document.getElementById('topd');
+
+destination.innerHTML=`
+`
+  */
+
+const topDest = [{ h4: "Maldives",p:" This adventure will take you through exotic landscapes, experience the magic of tea tasting, relax on the beaches while the sun sets, or indulge in exciting surfing. Get ready for complete hedonism and a relaxing vacation!" },
+                 {h4: "New York",p:" New York is definitely at the top of the list of tourist destinations of all tourists around the world. It is one of the largest cities in the world and the headquarters of large museums, galleries, international corporations and stock exchanges." },
+                 {h4: "Rome",p:" Rome - the heart of Italy, the city on seven hills, where, as is known, all roads lead, has always been a challenge for tourists from all over the world.So it is unique, unrepeatable and unlike any other capital in the world."},
+                  {h4: "Hawaii",p:" Hawaii is one of the most popular beach vacation destinations. These islands will enchant you from the moment you land at the airport. High peaks of volcanoes and white beaches, lots of greenery and flowers and enjoyment of cocktails and entertainment."}];
+
+const nizTopDestSrc = new Array("maldives1.jpg", "newyork.jpg", "rome.jpg","hawaii.jpg");
+let ispisTopDest = "";
+for (let i = 0; i < topDest.length; i++) {
+  ispisTopDest += `
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-5 okvir">
+      <img src="img/${nizTopDestSrc[i]}" class="img-fluid" />
+        <h4>${topDest[i].h4}</h4>
+        <p>${topDest[i].p}</p>
+    </div>
+  `;
+}
+const divTopDest = document.querySelector("#top");
+divTopDest.innerHTML = ispisTopDest;
